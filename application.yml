@@ -1,17 +1,15 @@
-server: 
-  port: 3344 
+server:
+  port: 3344
 
 ---
 spring:
   application:
     name:  micro-service-cloud-config-dev
-  profiles:
-    active: dev
+  profiles: dev
 
 ---
 spring:
-  profiles:
-    active: test
+  profiles: test
   application:
     name: micro-service-cloud-config-test
 
@@ -19,5 +17,4 @@ spring:
 spring:
   application:
     name: micro-service-cloud-config-prod
-  profiles:
-    active: prod
+  profiles: prod
