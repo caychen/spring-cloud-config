@@ -2,7 +2,7 @@ server:
   port: 3355
 spring:
   profiles:
-    active: test
+    active: dev
 
 ---
 spring:
