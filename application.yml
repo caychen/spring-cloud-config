@@ -6,15 +6,21 @@ spring:
   application:
     name:  micro-service-cloud-config-dev
   profiles: dev
+server:
+  port: 1000
 
 ---
 spring:
   profiles: test
   application:
     name: micro-service-cloud-config-test
+server:
+  port: 2000
 
 ---
 spring:
   application:
     name: micro-service-cloud-config-prod
   profiles: prod
+server:
+  port: 3000
