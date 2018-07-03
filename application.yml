@@ -1,5 +1,8 @@
 server:
   port: 3344
+spring:
+  profiles:
+    active: test
 
 ---
 spring:
@@ -7,7 +10,7 @@ spring:
     name:  micro-service-cloud-config-dev
   profiles: dev
 server:
-  port: 1000
+  port: 3344
 
 ---
 spring:
@@ -15,7 +18,7 @@ spring:
   application:
     name: micro-service-cloud-config-test
 server:
-  port: 2000
+  port: 4455
 
 ---
 spring:
@@ -23,4 +26,4 @@ spring:
     name: micro-service-cloud-config-prod
   profiles: prod
 server:
-  port: 3000
+  port: 5566
